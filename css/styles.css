@@ -11,11 +11,14 @@
 }
 
 body {
-  font-family: Roboto sans-serif;
+  font-family: Roboto serif;
 }
 
 /* header */
-
+.header {
+  background-color: var(--white-color);
+  font-style: normal;
+}
 /* logo webstudio */
 .header-logo {
   font-family: Raleway;
@@ -30,11 +33,11 @@ body {
   color: var(--accent-color);
 }
 /* nav-links */
-.nav-list > .nav-item {
+.nav-list {
   list-style: none;
 }
 
-.nav-item {
+.nav-link {
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -42,4 +45,27 @@ body {
   letter-spacing: 0.02em;
   text-decoration: none;
   color: var(--main-text-color);
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: var(--accent-color);
+}
+/* header adress */
+.address-list {
+  list-style: none;
+}
+
+.header-address {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  color: var(--secondary-text-color);
+}
+
+.header-address:hover,
+.header-address:focus {
+  color: var(--accent-color);
 }

@@ -11,7 +11,7 @@
 }
 
 body {
-  font-family: Roboto serif;
+  font-family: Roboto, sans-serif;
 }
 
 /* header */
@@ -38,7 +38,6 @@ body {
 }
 
 .nav-link {
-  font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -68,4 +67,25 @@ body {
 .header-address:hover,
 .header-address:focus {
   color: var(--accent-color);
+}
+/* Main */
+
+/* hero */
+.hero {
+  background-color: var(--main-text-color);
+}
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  color: var(--white-color);
+}
+.hero-btn {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  background-color: var(--accent-color);
+  color: var(--white-color);
 }

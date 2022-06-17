@@ -1,18 +1,16 @@
 :root {
   --accent-color: #2196f3;
-  --main-text-color: #212121;
-  --secondary-text-color: #757575;
+  --text-color-black: #212121;
+  --text-color-gray: #757575;
   --white-color: #ffffff;
-  --black-color: #000000;
-  --main-bgc: #2f303a;
-  --secondary-bgc: #e5e5e5;
-  --third-bgc: #f5f4fa;
-  --footer-adress-num-color: rgba(255, 255, 255, 0.6);
+  --absolute-black: #000000;
 }
 
 body {
   font-family: Roboto, sans-serif;
   font-style: normal;
+  color: var(--text-color-gray);
+  letter-spacing: 0.03em;
 }
 
 /* header */
@@ -28,9 +26,8 @@ body {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
-  letter-spacing: 0.03em;
   text-decoration: none;
-  color: var(--black-color);
+  color: var(--absolute-black);
 }
 .logo-accent {
   color: var(--accent-color);
@@ -51,7 +48,7 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
-  color: var(--main-text-color);
+  color: var(--text-color-black);
 }
 
 .nav-link:hover,
@@ -71,7 +68,7 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
-  color: var(--secondary-text-color);
+  color: var(--text-color-gray);
 }
 
 .header-address:hover,
@@ -84,7 +81,7 @@ body {
 /* hero */
 
 .hero {
-  background-color: var(--main-bgc);
+  background-color: #2f303a;
 }
 .hero-title {
   font-weight: 900;
@@ -98,12 +95,13 @@ body {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
-  background-color: var(--accent-color);
-  color: var(--white-color);
+  background-color: #2196f3;
+  color: #ffffff;
 }
 .hero-btn:hover,
 .hero-btn:focus {
-  color: #188ce8;
+  background-color: #188ce8;
+  color: #ffffff;
   cursor: pointer;
 }
 
@@ -113,8 +111,7 @@ body {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
-  letter-spacing: 0.03em;
-  color: var(--main-text-color);
+  color: var(--text-color-black);
 }
 
 /* details section */
@@ -131,15 +128,13 @@ body {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
-  letter-spacing: 0.03em;
-  color: var(--main-text-color);
+  color: var(--text-color-black);
 }
 .details-text {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
-  letter-spacing: 0.03em;
-  color: #757575;
+  color: var(--text-color-gray);
 }
 
 /* Our work section */
@@ -155,7 +150,7 @@ body {
 /* Our Team Section */
 
 .team-section {
-  background-color: var(--third-bgc);
+  background-color: #f5f4fa;
 }
 .team-list {
   list-style: none;
@@ -164,22 +159,20 @@ body {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
-  letter-spacing: 0.03em;
-  color: var(--main-text-color);
+  color: var(--text-color-black);
 }
 
 .team-text {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.18;
-  letter-spacing: 0.03em;
-  color: var(--secondary-text-color);
+  color: var(--text-color-gray);
 }
 
 /* Footer */
 
 .footer {
-  background-color: var(--main-bgc);
+  background-color: #2f303a;
 }
 
 /* Logo */
@@ -189,7 +182,6 @@ body {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
-  letter-spacing: 0.03em;
   text-decoration: none;
   color: var(--white-color);
 }
@@ -204,17 +196,63 @@ body {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
-  letter-spacing: 0.03em;
   text-decoration: none;
   font-style: normal;
   color: var(--white-color);
 }
 
 .address-link {
-  color: var(--footer-adress-num-color);
+  color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
 }
 .address-link:hover,
 .address-link:focus {
   color: var(--accent-color);
+}
+
+/* Portfolio sections */
+.portfolio-main {
+  background-color: var(--white-color);
+}
+
+/* nav buttons */
+
+.btn-list {
+  list-style: none;
+}
+
+.portfolio-button {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  background-color: #f5f4fa;
+  color: var(--accent-color);
+}
+
+.portfolio-button:hover,
+.portfolio-button:focus {
+  background-color: #2196f3;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+/* Portfolio plates */
+
+.portfolio-list {
+  list-style: none;
+}
+
+.portfolio-item {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--text-color-black);
+}
+
+.portfolio-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.87;
+  color: var(--text-color-gray);
 }

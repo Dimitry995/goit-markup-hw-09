@@ -12,12 +12,12 @@
 
 body {
   font-family: Roboto, sans-serif;
+  font-style: normal;
 }
 
 /* header */
 .header {
   background-color: var(--white-color);
-  font-style: normal;
 }
 /* logo webstudio */
 .header-logo {
@@ -35,6 +35,9 @@ body {
 /* nav-links */
 .nav-list {
   list-style: none;
+}
+.nav-list .current {
+  color: var(--accent-color);
 }
 
 .nav-link {
